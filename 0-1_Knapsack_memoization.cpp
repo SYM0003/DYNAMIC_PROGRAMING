@@ -42,7 +42,7 @@ int knapsack(int n, int wt[], int val[], int W, int **t)
         return 0;
     }
 
-    if (t[n][W] != 0)
+    if (t[n][W] != -1)
     {
         return t[n][W];
     }
@@ -59,8 +59,8 @@ int knapsack(int n, int wt[], int val[], int W, int **t)
 int main()
 {
     int n, W;
-    cin >> n;
-    cin >> W;
+    cin >> n;//->Numbers of objects
+    cin >> W;//->capacity of knapsack
 
     int **t;
     t = new int *[n + 1];

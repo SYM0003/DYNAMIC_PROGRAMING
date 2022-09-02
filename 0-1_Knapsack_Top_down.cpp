@@ -6,12 +6,13 @@ where ‘N’ is the number of weight element and ‘W’ is capacity. As for ev
 Auxiliary Space: O(N*W).
 The use of 2-D array of size ‘N*W’.
 */
-
+#include <bits/stdc++.h>
 #include <iostream>
 #include <stdlib.h>
 #include <vector>
 #include <algorithm>
 #include <cstring>
+using std::array;
 using std::cin;
 // using std::m
 using std::cout;
@@ -21,7 +22,6 @@ using std::vector;
 int knapsack(int n, int wt[], int val[], int W)
 {
     int t[n + 1][W + 1];
-
     for (int j = 0; j < W + 1; j++) //-->capacity of the knapsack
 
     {

@@ -53,6 +53,8 @@ int main()
     int n, W;
     cin >> n;
     cin >> W;
+    // int *wt = new int[n];
+    // int *val = new int[n];
     int wt[n];
     int val[n];
     for (int i = 0; i < n; i++)
